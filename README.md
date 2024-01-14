@@ -29,7 +29,7 @@
 
 # ¿WHAT IS TELECOMBlog?
 
-This API provides services for a technology platform related to sports, specifically functional training and Olympic lifting. It is designed for athletes of any level and integrates artificial intelligence into its functionalities.
+¡Explore the fascinating world of telecommunications with TelecomBlog! A blog designed to keep you updated on the latest trends, news, and advances in the exciting field of telecommunications. Whether you are an industry professional, a tech enthusiast, or simply interested in how telecommunications are transforming the world, you will find all the articles you need here.
 
 <a name="requirements"></a>
 
