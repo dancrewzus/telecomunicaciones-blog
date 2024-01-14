@@ -22,7 +22,7 @@ const topicPosts = posts
   .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 
 const title = topic.data.title;
-const description = `All posts about ${title}`;
+const description = `Todos los artículos sobre ${title}`;
 ---
 
 <Layout title={title} description={description}>
@@ -33,7 +33,7 @@ const description = `All posts about ${title}`;
     {
       topicPosts.length > 0 && (
         <>
-          <h2>Posts about {topic.data.title.toLowerCase()}</h2>
+          <h2>Artículos sobre {topic.data.title.toLowerCase()}</h2>
           <PostList posts={topicPosts} />
         </>
       )

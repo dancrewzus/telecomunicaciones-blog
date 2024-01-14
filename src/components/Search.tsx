@@ -56,7 +56,7 @@ export default function Search({ searchList }: Props) {
         for="default-search"
         class="sr-only mb-2 text-sm font-medium text-gray-900 dark:text-white"
       >
-        Search
+        Buscar
       </label>
       <div class="relative">
         <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">

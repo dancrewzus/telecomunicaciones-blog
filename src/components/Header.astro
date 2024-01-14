@@ -1,12 +1,13 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import HeaderDropdownLink from "./HeaderDropdownLink.astro";
-import { SITE_TITLE } from "../consts";
+import { CONSTANTS } from "../consts";
 import HeaderDropdown from "./HeaderDropdown.astro";
 import { getCollection } from "astro:content";
 import DarkModeToggle from "./DarkModeToggle.astro";
 
 const topics = await getCollection("topic");
+const { SITE_TITLE } = CONSTANTS
 ---
 
 <header
@@ -19,7 +20,7 @@ const topics = await getCollection("topic");
       <div class="title-container flex w-full justify-between py-3">
         <h2 class="m-0 text-xl font-medium">
           <a href="/" class="text-header-foreground no-underline">
-            {SITE_TITLE}
+            { SITE_TITLE }
           </a>
         </h2>
 
@@ -35,7 +36,7 @@ const topics = await getCollection("topic");
             stroke="currentColor"
             class="h-6 w-6"
           >
-            <title>Open</title>
+            <title>Abrir</title>
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -50,7 +51,7 @@ const topics = await getCollection("topic");
             stroke="currentColor"
             class="h-6 w-6"
           >
-            <title>Close</title>
+            <title>Cerrar</title>
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -65,9 +66,10 @@ const topics = await getCollection("topic");
         <ul
           class="m-0 flex list-none flex-col items-start gap-2 px-2 py-4 pb-8 md:flex-row md:items-center md:justify-between md:p-0 md:py-2"
         >
+          <HeaderLink href="/">Inicio</HeaderLink>
           <HeaderLink href="/blog">Blog</HeaderLink>
-          <HeaderLink href="/authors">Authors</HeaderLink>
-          <HeaderDropdown href="/topics" linkText="Topics">
+          <HeaderLink href="/authors">Autores</HeaderLink>
+          <HeaderDropdown href="/topics" linkText="Temas">
             {
               topics.map((topic) => (
                 <HeaderDropdownLink href={`/topics/${topic.slug}`}>
@@ -76,15 +78,14 @@ const topics = await getCollection("topic");
               ))
             }
           </HeaderDropdown>
-          <HeaderLink href="/about">About</HeaderLink>
           <HeaderLink
-            href="https://github.com/EddyVinck/astro-engineering-blog"
+            href="https://github.com/dancrewzus/telecomunicaciones-blog"
             target="_blank"
           >
             GitHub
           </HeaderLink>
           <HeaderLink href="/search">
-            <span class="mr-2 md:sr-only">Search</span>
+            <span class="mr-2 md:sr-only">Buscar</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -93,7 +94,7 @@ const topics = await getCollection("topic");
               stroke="currentColor"
               class="h-6 w-6"
             >
-              <title>Search</title>
+              <title>Buscar</title>
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"

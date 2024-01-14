@@ -3,9 +3,11 @@ import Layout from "../../layouts/TransitionContent.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 import type { GetStaticPaths, Page } from "astro";
 import PostList from "../../components/PostList.astro";
-import { PAGINATION_POSTS_PER_PAGE } from "../../consts";
+import { CONSTANTS } from "../../consts";
+
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const { PAGINATION_POSTS_PER_PAGE } = CONSTANTS;
   const posts = (await getCollection("blog"))
     .filter((post) => post.data.draft === false)
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -23,9 +25,9 @@ const { page } = Astro.props;
 
 <Layout
   title="Blog"
-  description="Our engineers write about the technical challanges they have faced."
+  description="Escribo sobre tecnología."
 >
-  <h1>Blog</h1>
+  <h1>Artículos</h1>
   <div class="grid gap-8">
     <PostList posts={page.data} />
     <div class="grid w-full grid-cols-3 justify-between">
@@ -46,7 +48,7 @@ const { page } = Astro.props;
                 d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
               />
             </svg>
-            Previous
+            Anterior
           </a>
         ) : (
           <span />
@@ -54,7 +56,7 @@ const { page } = Astro.props;
       }
       {
         page.url.current ? (
-          <span class="text-center">Page {page.currentPage}</span>
+          <span class="text-center">Página {page.currentPage}</span>
         ) : (
           <span />
         )
@@ -65,7 +67,7 @@ const { page } = Astro.props;
             class="flex items-center justify-end gap-2 text-right"
             href={page.url.next}
           >
-            Next
+            Siguiente
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

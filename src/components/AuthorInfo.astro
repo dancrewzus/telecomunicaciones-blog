@@ -13,7 +13,7 @@ const { authorId, showPosts, headingLevel = 2 } = Astro.props;
 
 const entry = await getEntryBySlug("author", authorId);
 if (!entry) {
-  throw new Error(`Author with id ${authorId} not found`);
+  throw new Error(`El autor con id ${authorId} no existe.`);
 }
 
 const { Content } = await entry.render();
@@ -39,19 +39,23 @@ const authorPosts = posts
     {firstname}&nbsp;{lastname}
   </Heading>
   <Image
-    class="h-24 w-24 rounded-full"
+    class="rounded-full"
     src={avatar}
-    width={96}
-    height={96}
+    width={250}
+    height={250}
     alt={`${firstname} ${lastname}`}
   />
-  <div><Content /></div>
+  <div>
+    <p style="text-align: justify !important;">
+      <Content />
+    </p>
+  </div>
 
   <div class="flex flex-col gap-2">
     {
       showPosts && authorPosts.length > 0 && (
         <>
-          <p class="mb-0">My posts ({authorPosts.length})</p>
+          <p class="mb-0">Mis artículos ({authorPosts.length}):</p>
           <ul class="list-outside list-disc pl-4">
             {authorPosts.map((post) => (
               <li>
@@ -71,8 +75,9 @@ const authorPosts = posts
     {
       socials.length > 0 && (
         <>
-          <p class="mb-0">My links</p>
-          <ul class="m-0 flex list-none gap-4 p-0">
+          <br>
+          <hr>
+          <ul class="m-0 flex list-none gap-4 p-0" >
             {socials.map((social) => (
               <li>
                 <a

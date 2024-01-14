@@ -1,70 +1,124 @@
-![Astro Engineering Blog template: Multiple authors, co-authoring, topics, search, and more](./public/placeholder-social.jpg)
+<a name="top"></a>
 
-# Astro Starter Kit: Engineering Blog
+<p align="center">
+  <img src="./public/placeholder-social.jpg" style="width: 100%">
+</p>
+<hr>
+<p align="center">
+  UNIVERSIDAD NACIONAL EXPERIMENTAL DE GUAYANA<br>
+  Virrectorado Académico<br>
+  Coordinación General de Pregrado<br>
+  Ingeniería Informática<br>
+  Telecomunicaciones
+</p>
 
-This template was built to easily create an engineering blog for one or multiple authors.
+# INDEX
 
-Demo: https://astro-engineering-blog.netlify.app/
+* [¿WHAT IS TELECOMBlog?](#what-is)
+* [REQUIREMENTS](#requirements)
+* [STEPS TO DOWNLOAD, CONFIGURE AND USE THE APPLICATION](#main-steps)
+  * [Download](#download)
+  * [Install dependencies](#install-dependencies)
+  * [Start application in your local machine](#start-app)
+* [PROJECT STRUCTURE](#structure)
+* [TECHNOLOGIES THAT I USED](#technologies)
+* [CONTRIBUTIONS](#contributions)
+* [LICENSE](#license)
 
-## Getting started
+<a name="what-is"></a>
 
+# ¿WHAT IS TELECOMBlog?
+
+This API provides services for a technology platform related to sports, specifically functional training and Olympic lifting. It is designed for athletes of any level and integrates artificial intelligence into its functionalities.
+
+<a name="requirements"></a>
+
+# REQUIREMENTS
+
+- [Git](https://gitforwindows.org/) installed in your machine.
+- [npm](https://nodejs.org/es/download/) installed and configured in your machine.
+- [node](https://nodejs.org/es/download/) installed and configured in your machine.
+- Text editor like [VS Code](https://code.visualstudio.com/).
+
+<a name="main-steps"></a>
+
+# STEPS TO DOWNLOAD, CONFIGURE AND USE THE APPLICATION
+
+<p align="center">
+  <img src="https://res.cloudinary.com/idepixel/image/upload/c_scale,h_260,w_360/v1651348337/Landing/service-image.webp" alt="Download and configure">
+</p>
+
+<a name="download"></a>
+
+## > Download
+
+You can download the application by copying its link, either by ssh or https. The git command you need to run is as follows:
+
+```sh
+# HTTPS =====================================================!
+
+# Clone repository
+$ git clone https://github.com/dancrewzus/telecomunicaciones-blog.git
+$ cd fx11_api
+
+# If you want to download it with another folder name, example your-folder-name
+$ git clone https://github.com/dancrewzus/telecomunicaciones-blog.git your-folder-name
+$ cd your-folder-name
+
+# SSH =======================================================!
+
+# Clone repository
+$ git clone git@github.com:dancrewzus/telecomunicaciones-blog.git
+$ cd fx11_api
+
+# If you want to download it with another folder name, example your-folder-name
+$ git clone git@github.com:dancrewzus/telecomunicaciones-blog.git your-folder-name
+$ cd your-folder-name
 ```
-npm create astro@latest -- --template eddyvinck/astro-engineering-blog
+
+<a name="install-dependencies"></a>
+
+## > Install dependencies
+
+In the application root folder, type this command in the command line terminal:
+
+```sh
+# Install dependencies with npm
+$ npm install
+
+# Install dependencies with Yarn
+$ yarn install
 ```
 
-### Configuration
+<a name="start-app"></a>
 
-Edit the values in `src/consts.ts` to match your brand or company:
+## > Start application in your local machine
 
-```ts
-export const BRAND = "Acme";
-export const SITE_TITLE = "Acme Engineering";
-export const SITE_URL = "https://astro-engineering-blog.netlify.app";
-export const SITE_DESCRIPTION = "Welcome to the Acme Engineering blog!";
-export const PAGINATION_POSTS_PER_PAGE = 5;
+To start the applicatioN, we must execute the following command:
+
+```sh
+# development (use watch mode)
+$ npm run dev
 ```
 
-Change any lines or add more in the `<head>` tags in `src/components/BaseHead.astro`, like the favicon:
+All available commands:
 
-```html
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-```
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
 
-## Features
+> If you want to stop the execution press (ctrl + c) / (cmd + c) in the command line terminal.
 
-- ✅ Easy configuration
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Uses [`astro:assets`](https://docs.astro.build/en/guides/assets/) for optimized images
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-- ✅ Search functionality
-- ✅ Author system
-- ✅ Multiple authors per post (co-authoring)
-- ✅ Topics
-- ✅ Blog pagination
-- ✅ Blog drafts
-- ✅ Dark mode (system preference + toggle button)
+<a name="structure"></a>
 
-## Technologies used
+# PROJECT STRUCTURE
 
-- Astro as the framework tying everything together
-- Solid.js for search (all `.tsx` files) and any other features that require JavaScript
-- Tailwind CSS for styling
-- Fuse.js for search logic
-- Everything is written in TypeScript 💙
-
-## Thank you ❤️
-
-- Astro team & all the other library authors
-- The maintainers of the [Astro blog template](https://github.com/withastro/astro/tree/latest/examples/blog?on=github) which was used as a base for this template
-- [FrontValue](https://frontvalue.nl/), for letting me work on this template during work hours
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Inside of project, you'll see the following folders and files:
 
 ```
 ├── public/
@@ -83,23 +137,57 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## CLI Commands
+<a name="technologies"></a>
 
-All commands are run from the root of the project, from a terminal:
+# TECHNOLOGIES THAT I USED
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+This is the list of technologies that i use in the development of this api.
+<br>
+<br>
+<p align="center">
+  <a target="_blank" href="https://www.javascript.com">
+    <img title="JavaScript" src="https://res.cloudinary.com/idepixel/image/upload/c_scale,h_60,w_60/v1600633849/Landing/javascript.webp"/>
+  </a>&nbsp; &nbsp;
+  <a target="_blank" href="https://www.typescriptlang.org/">
+    <img title="TypeScript" src="https://res.cloudinary.com/idepixel/image/upload/c_scale,h_60,w_60/v1600633849/Landing/typescript.png"/>
+  </a>&nbsp; &nbsp;
+  <a target="_blank" href="https://nodejs.org/en">
+    <img title="NodeJS" src="https://res.cloudinary.com/idepixel/image/upload/c_scale,h_60,w_160/v1600633849/Landing/nodejs.webp"/>
+  </a>&nbsp; &nbsp;
+  <a target="_blank" href="https://expressjs.com">
+    <img title="ExpressJS" src="https://res.cloudinary.com/idepixel/image/upload/c_scale,h_60,w_160/v1651344178/Landing/express.webp"/>
+  </a><br><br>
+  <a target="_blank" href="https://astro.build/">
+    <img title="Astro" src="https://astro.build/assets/press/astro-icon-light-gradient.svg"/>
+  </a>&nbsp; &nbsp;
+  <a target="_blank" href="https://www.solidjs.com/">
+    <img width="160" height="60" title="Solid.JS" src="https://www.solidjs.com/assets/logo-123b04bc.svg"/>
+  </a>&nbsp; &nbsp;
+  <a target="_blank" href="https://tailwindcss.com/">
+    <img width="160" height="60" title="Solid.JS" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"/>
+  </a>&nbsp; &nbsp;
+</p>
 
 ### Learn more about Astro
 
 Check out [the documentation](https://docs.astro.build) or jump into the [Discord server](https://astro.build/chat).
+
+
+<a name="contributions"></a>
+
+# CONTRIBUTIONS
+
+Contributions are welcome. Please create an issue to discuss your ideas before submitting a Pull Request.
+
+
+<a name="license"></a>
+
+# LICENSE
+
+This project is licensed under the [MIT licensed](LICENSE).
+
+

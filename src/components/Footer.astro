@@ -1,9 +1,10 @@
 ---
-import { BRAND } from "../consts";
+import { CONSTANTS } from "../consts";
 
 const today = new Date();
+const { BRAND } = CONSTANTS;
 ---
 
 <footer class="p-6 text-center dark:text-white/70">
-  &copy; {today.getFullYear()}&nbsp;{BRAND}. All rights reserved.
+  &copy; {today.getFullYear()}&nbsp;{ BRAND }. Todos los derechos reservados.
 </footer>

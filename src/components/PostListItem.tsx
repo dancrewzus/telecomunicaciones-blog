@@ -16,14 +16,14 @@ export const PostListItem = ({ post }: { post: CollectionEntry<"blog"> }) => {
       <p class="text-sm italic">{description}</p>
       <div class="info dot-separated flex items-center text-sm text-gray-600 dark:text-white/50">
         <time datetime={pubDate.toISOString()}>
-          {pubDate.toLocaleDateString("en-us", {
+          {pubDate.toLocaleDateString("es-ES", {
             year: "numeric",
             month: "short",
             day: "numeric",
           })}
         </time>
-        <p class="m-0 text-sm italic">written by {authors.join(" & ")}</p>
-        <p class="m-0 text-sm">topics: {topics.join(", ")}</p>
+        <p class="m-0 text-sm italic">Escrito por {authors.join(" & ")}</p>
+        <p class="m-0 text-sm">Temas: {topics.join(", ")}</p>
       </div>
     </div>
   );

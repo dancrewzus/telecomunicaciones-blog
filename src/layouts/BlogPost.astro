@@ -35,7 +35,7 @@ const { title, description, pubDate, updatedDate, heroImage, authors, topics } =
         {
           updatedDate && (
             <div class="last-updated-on">
-              Last updated on <FormattedDate date={updatedDate} />
+              Última actualización el <FormattedDate date={updatedDate} />
             </div>
           )
         }
@@ -45,7 +45,7 @@ const { title, description, pubDate, updatedDate, heroImage, authors, topics } =
           {
             topics.length > 0 && (
               <>
-                <h2>Topics</h2>
+                <h2>Temas</h2>
                 <TopicList topics={topics} />
               </>
             )
@@ -53,7 +53,7 @@ const { title, description, pubDate, updatedDate, heroImage, authors, topics } =
           {
             !!authors.length && (
               <>
-                <h2>Author{authors.length > 1 ? "s" : ""}</h2>
+                <h2>Autor{authors.length > 1 ? "es" : ""}</h2>
                 <AuthorList
                   class="author-list grid list-none grid-cols-1 gap-4 pl-0"
                   authors={authors}
