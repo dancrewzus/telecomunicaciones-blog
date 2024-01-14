@@ -3,12 +3,15 @@ import PostList from "../../components/PostList.astro";
 import Layout from "../../layouts/Page.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const topics = await getCollection("topic");
-  return topics.map((topic) => ({
+  const array = topics.map((topic) => ({
     params: { slug: topic.slug },
     props: topic,
   }));
+  return array;
 }
 type Props = CollectionEntry<"topic">;
 

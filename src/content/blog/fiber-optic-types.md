@@ -1,14 +1,14 @@
 ---
-title: "Fibra óptica monomodo vs. multimodo: Un análisis técnico exhaustivo"
+title: "Fibra óptica monomodo vs. multimodo: Un análisis técnico exhaustivo."
 topics: [ 'fiber-optic-communications', 'optical-and-acoustic-communication-systems' ]
 authors:
   - dancrewzus
-description: "Tecnología, aplicaciones y desafíos relacionados con la fibra óptica."
+description: "Compara en detalle las características de las fibras monomodo y multimodo, ayudando en decisiones informadas de selección."
 pubDate: "Jan 14 2024"
 heroImage: "/img/blog/mono-vs-multi.jpg"
 ---
 
-<p style="text-align: justify;">
+<p class="text-justify">
   En el mundo de la fibra óptica, la elección entre fibras monomodo y multimodo desempeña un papel crucial en el diseño de redes de comunicación. Este artículo profundiza en los aspectos técnicos de ambas tecnologías, explorando sus diferencias fundamentales, aplicaciones específicas y cómo cada una aborda las complejidades de la transmisión óptica.
 </p>
 
@@ -16,7 +16,7 @@ heroImage: "/img/blog/mono-vs-multi.jpg"
 
 ### Estructura
 
-<p style="text-align: justify;">
+<p class="text-justify">
   La fibra óptica monomodo presenta un núcleo extremadamente delgado, típicamente alrededor de 9 micrómetros de diámetro, lo que permite la transmisión de un solo modo de luz. El revestimiento de la fibra tiene un índice de refracción ligeramente inferior, lo que facilita la reflexión total interna y minimiza la dispersión de la señal.
 </p>
 
@@ -27,7 +27,7 @@ heroImage: "/img/blog/mono-vs-multi.jpg"
 
 ### Aplicaciones
 
-<p style="text-align: justify;">
+<p class="text-justify">
   La fibra óptica monomodo se utiliza comúnmente en aplicaciones de larga distancia, como conexiones de red de área extensa (WAN), enlaces troncales de redes y sistemas de transmisión de datos de alta velocidad.
 </p>
 
@@ -35,7 +35,7 @@ heroImage: "/img/blog/mono-vs-multi.jpg"
 
 ### Estructura
 
-<p style="text-align: justify;">
+<p class="text-justify">
   La fibra óptica multimodo tiene un núcleo más grande, generalmente entre 50 y 62.5 micrómetros de diámetro, lo que permite la transmisión de varios modos de luz simultáneamente. El índice de refracción del revestimiento es más cercano al del núcleo, lo que resulta en una mayor dispersión.
 </p>
 
@@ -46,14 +46,14 @@ heroImage: "/img/blog/mono-vs-multi.jpg"
 
 ### Aplicaciones
 
-<p style="text-align: justify;">
+<p class="text-justify">
   La fibra óptica multimodo se utiliza comúnmente en aplicaciones de corta y media distancia, como redes locales (LAN), sistemas de transmisión de datos a velocidades moderadas y conexiones en entornos empresariales.
 </p>
 
 ## Comparación técnica: monomodo vs. multimodo
 
 <p style="text-align: center;">
-  <img src="/img/blog/differences.webp" style="width: 100%">
+  <img class="rounded-2xl" src="/img/blog/differences.webp" style="width: 100%">
 </p>
 
 ### Dispersión
@@ -73,6 +73,6 @@ heroImage: "/img/blog/mono-vs-multi.jpg"
 
 ## Consideraciones a elección
 
-<p style="text-align: justify;">
+<p class="text-justify">
   La elección entre fibra óptica monomodo y multimodo depende de factores como la distancia de transmisión, el ancho de banda requerido y el entorno de aplicación. Las redes de larga distancia y alta velocidad a menudo optan por la monomodo, mientras que las conexiones locales y de costos más bajos pueden favorecer la multimodo.
 </p>

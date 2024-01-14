@@ -42,7 +42,7 @@ const renderTopics = topics === "all" ? allTopics : topicsFromProps;
         .filter((topic) => !!topic?.slug && !!topic?.data.title)
         .map((topic) => (
           <li>
-            <a href={`/topics/${topic?.slug}/`}>{topic?.data.title}</a>
+            <a class="text-link no-underline text-blue-600 hover:text-blue-800" href={`/topics/${topic?.slug}/`}>{topic?.data.title}</a>
           </li>
         ))
   }

@@ -35,7 +35,7 @@ const allauthors = await getCollection("author");
 const renderAuthors = authors === "all" ? allauthors : authorsFromProps;
 ---
 
-<ul class={className}>
+<div class={className}>
   {
     !!renderAuthors &&
       renderAuthors
@@ -43,14 +43,14 @@ const renderAuthors = authors === "all" ? allauthors : authorsFromProps;
         .map((author) => {
           if (!author || !author.slug) return null;
           return (
-            <li>
+          <div class="row-span-2">
               <AuthorInfo
                 authorId={author.slug}
                 showPosts={showPosts}
                 headingLevel={headingLevel}
               />
-            </li>
+            </div>
           );
         })
   }
-</ul>
+</div>

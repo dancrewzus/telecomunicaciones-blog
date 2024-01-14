@@ -27,7 +27,7 @@ const { title, description, pubDate, updatedDate, heroImage, authors, topics } =
       <article class="prose mx-auto dark:prose-invert">
         {
           heroImage && (
-            <Image width={661.17} height={330.5} src={heroImage} alt="" />
+            <Image class="rounded-2xl" width={661.17} height={330.5} src={heroImage} alt={description} />
           )
         }
         <h1 class="title">{title}</h1>

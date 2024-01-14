@@ -18,6 +18,7 @@ if (!entry) {
 
 const { Content } = await entry.render();
 const { firstname, lastname, avatar, github, linkedin, twitter } = entry.data;
+const fullname = `${firstname} ${lastname}`.toUpperCase()
 const socials = [
   { name: "Github", url: github },
   { name: "LinkedIn", url: linkedin },
@@ -34,24 +35,26 @@ const authorPosts = posts
   }));
 ---
 
-<div class="not-prose flex flex-col items-start gap-4 rounded-2xl p-4">
+<div class="not-prose flex flex-col items-start gap-4 rounded-2xl p-12 border-4 border-slate-800">
   <Heading headingLevel={headingLevel} class="text-xl">
-    {firstname}&nbsp;{lastname}
+    {fullname}
   </Heading>
   <Image
-    class="rounded-full"
+    class="rounded-full border-2 border-slate-400 bg-slate-500"
     src={avatar}
     width={250}
     height={250}
+    style="display: block; margin-left: auto; margin-right: auto;"
     alt={`${firstname} ${lastname}`}
   />
+  <hr style="width: 100%;">
   <div>
-    <p style="text-align: justify !important;">
+    <p class="text-justify">
       <Content />
     </p>
   </div>
 
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2" style="width: 100%">
     {
       showPosts && authorPosts.length > 0 && (
         <>
@@ -60,7 +63,7 @@ const authorPosts = posts
             {authorPosts.map((post) => (
               <li>
                 <a
-                  class="text-link no-underline hover:underline"
+                  class="text-link no-underline text-blue-600 hover:text-blue-800"
                   href={post.url}
                 >
                   {post.data.title}
@@ -75,20 +78,16 @@ const authorPosts = posts
     {
       socials.length > 0 && (
         <>
-          <br>
           <hr>
-          <ul class="m-0 flex list-none gap-4 p-0" >
+          <div class="grid grid-rows-3 grid-flow-col gap-4">
             {socials.map((social) => (
-              <li>
-                <a
-                  class="text-link no-underline hover:underline"
-                  href={social.url}
-                >
+              <div class="row-span-2 text-center">
+                <a class="text-link no-underline text-blue-600 hover:text-blue-800" href={social.url} target="_blank">
                   {social.name}
                 </a>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </>
       )
     }
