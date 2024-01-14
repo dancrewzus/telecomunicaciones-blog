@@ -8,5 +8,6 @@ github: https://github.com/dancrewzus
 ---
 
 <p style="text-align: justify;">
-  Comencé desde pequeño en el mundo de la programación con Pascal y usando Windows 98, de la mano de mis padres quienes me abrieron la puerta a este. Poco a poco fui aprendiendo de forma autodidacta, mediante cursos y videos nuevas tecnologías incluyendo la electrónica; esto, hasta comenzar la Universidad donde terminé de desarrollar la lógica de programación necesaria y creé una base sólida de conocimientos.
+  Desarrollador de Software con más de 10 años de experiencia. Mi enfoque principal son las tecnologías web aunque eso no descarta el desarrollo mobile, machine learning, devops, bases de datos redes y más.
+  Trato de mantenerme en constante aprendizaje de nuevas tecnologías. Actualmente me desempeño cómo Software Engineer en Mercadolibre, en su sede de Chile, en el área de Frontend Core.
 </p>

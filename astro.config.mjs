@@ -4,18 +4,18 @@ import sitemap from "@astrojs/sitemap";
 import solidJs from "@astrojs/solid-js";
 import tailwind from "@astrojs/tailwind";
 import { CONSTANTS } from "./src/consts.ts";
+import vercel from "@astrojs/vercel/serverless";
+const {
+  SITE_URL
+} = CONSTANTS;
 
-const { SITE_URL } = CONSTANTS
 
 // https://astro.build/config
 export default defineConfig({
   site: SITE_URL,
-  integrations: [
-    mdx(),
-    sitemap(),
-    solidJs({
-      include: "**.tsx",
-    }),
-    tailwind(),
-  ],
+  integrations: [mdx(), sitemap(), solidJs({
+    include: "**.tsx"
+  }), tailwind()],
+  output: "server",
+  adapter: vercel()
 });

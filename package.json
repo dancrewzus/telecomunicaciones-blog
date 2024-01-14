@@ -2,10 +2,10 @@
   "name": "blog-telecomunicaciones",
   "type": "module",
   "version": "0.0.1",
-  "author": "Eddy Vinck",
+  "author": "Daniel Rodriguez",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EddyVinck/astro-engineering-blog.git"
+    "url": "https://github.com/dancrewzus/telecomunicaciones-blog"
   },
   "scripts": {
     "dev": "astro dev",
@@ -16,12 +16,13 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
-    "@astrojs/mdx": "^1.1.0",
-    "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^3.0.0",
-    "@astrojs/solid-js": "^3.0.1",
-    "@astrojs/tailwind": "^5.0.0",
-    "astro": "^3.2.0",
+    "@astrojs/mdx": "^2.0.4",
+    "@astrojs/rss": "^4.0.2",
+    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/solid-js": "^4.0.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^6.1.4",
+    "astro": "^4.1.2",
     "fuse.js": "^6.6.2",
     "solid-js": "^1.7.3",
     "tailwindcss": "^3.3.1",
