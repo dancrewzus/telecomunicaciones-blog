@@ -155,15 +155,10 @@ This is the list of technologies that i use in the development of this api.
   <a target="_blank" href="https://www.typescriptlang.org/">
     <img title="TypeScript" src="https://res.cloudinary.com/idepixel/image/upload/c_scale,h_60,w_60/v1600633849/Landing/typescript.png"/>
   </a>&nbsp; &nbsp;
-  <a target="_blank" href="https://nodejs.org/en">
-    <img title="NodeJS" src="https://res.cloudinary.com/idepixel/image/upload/c_scale,h_60,w_160/v1600633849/Landing/nodejs.webp"/>
-  </a>&nbsp; &nbsp;
-  <a target="_blank" href="https://expressjs.com">
-    <img title="ExpressJS" src="https://res.cloudinary.com/idepixel/image/upload/c_scale,h_60,w_160/v1651344178/Landing/express.webp"/>
-  </a><br><br>
   <a target="_blank" href="https://astro.build/">
     <img title="Astro" src="https://astro.build/assets/press/astro-icon-light-gradient.svg"/>
-  </a>&nbsp; &nbsp;
+  </a>
+  <br><br>
   <a target="_blank" href="https://www.solidjs.com/">
     <img width="160" height="60" title="Solid.JS" src="https://www.solidjs.com/assets/logo-123b04bc.svg"/>
   </a>&nbsp; &nbsp;
